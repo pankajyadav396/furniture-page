@@ -6,7 +6,7 @@ const Ourstory = () => {
     return (
         <>
             <div>
-                <div className="max-w-[1341px] mx-auto px-3 max-lg:pb-[80px] overflow-hidden">
+                <div className="max-w-[1341px] mx-auto px-3 max-lg:pb-[80px]">
                     <div className="  grid grid-cols-1 lg:grid-cols-2 pt-[134px]" >
                         <div className="span-cols-2 w-full px-3 flex justify-center">
                             <div className="relative">
