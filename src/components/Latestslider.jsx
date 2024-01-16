@@ -56,7 +56,7 @@ const Latestslider = () => {
 
     return (
         <>
-            <div className="pb-[138px] overflow-hidden" >
+            <div className="pb-[138px] " >
                 <div className="max-w-[1340px]  px-3 mx-auto pt-[30px] ">
                     <div className="flex flex-col text-center md:flex-row items-center justify-center 910:justify-start  gap-2">
                         <span className="w-[95px] h-[1px] bg-black"></span>
