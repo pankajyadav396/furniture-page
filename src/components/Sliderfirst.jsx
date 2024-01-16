@@ -144,10 +144,10 @@ const Sliderfirst = () => {
         ]
     };
     return (
-        <div className="bg-[#2D39490A] max-lg:max-w-[1320px] max-lg:mx-auto max-lg:px-3 pt-7 md:pt-9 lg:pt-[40px] min-[1280px]:mt-[300px] pb-5 sm:pb-7 md:pb-12 lg:pb-[110px] relative overflow-x-clip">
+        <div className="bg-[#2D39490A] overflow-hidden max-lg:max-w-[1320px] max-lg:mx-auto max-lg:px-3 pt-7 md:pt-9 lg:pt-[40px] min-[1280px]:mt-[300px] pb-5 sm:pb-7 md:pb-12 lg:pb-[110px] relative overflow-x-clip">
             <div className="max-w-[741px] max-h-[417px] h-full max-xl:hidden bg-gradient-to-t from-gray-300 to-gray-800 w-full absolute right-0 top-[-42%] "></div>
             <div className="flex flex-wrap flex-row -mx-3">
-                <div data-aos='fade-right' className="w-5/12 max-lg:w-full px-3 flex justify-center text-center">
+                <div  className="w-5/12 max-lg:w-full px-3 flex justify-center text-center">
                     <div>
                         <div className="sm:flex items-center sm:gap-[9px]">
                             <div className="max-sm:hidden w-[16%] border border-black border-solid "></div>
@@ -170,7 +170,7 @@ const Sliderfirst = () => {
                         </div>
                     </div>
                 </div>
-                <div data-aos='fade-left' className="w-7/12 mt-0 max-lg:mt-[50px] max-lg:w-full ">
+                <div className="w-7/12 mt-0 max-lg:mt-[50px] max-lg:w-full ">
                     <Slider ref={btn} {...settings} className="firstslider right-0">{card}</Slider>
                 </div>
             </div>

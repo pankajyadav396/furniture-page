@@ -70,12 +70,12 @@ const Teastimonial = () => {
         },
     ]
     return (
-        <div className='mx-auto px-3 max-w-[1320px] md:pt-[60px] pt-40px'>
-            <div className='flex items-center gap-3' data-aos='fade-right'>
+        <div className='mx-auto px-3 max-w-[1320px] md:pt-[60px] pt-40px overflow-hidden'>
+            <div className='flex items-center gap-3'>
                 <span className='w-[95px] h-[1px] border-black bg-black'></span>
                 <p className='text-[#BD7D41] text-lg sm:text-xl font-Poppins font-normal headingLine'>Customer Says</p></div>
             <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-5 leading-normal'>Testimonial</h2>
-            <div className='mt-[51px] mb-12 sm:mb-16 md:mb-20 lg:mb-[109px]' data-aos='fade-up'>
+            <div className='mt-[51px] mb-12 sm:mb-16 md:mb-20 lg:mb-[109px]'>
                 <div>
                     <Swiper loop={true} spaceBetween={55} breakpoints={{ 450: { slidesPerView: 3, }, 700: { slidesPerView: 5, }, 1024: { slidesPerView: 7, }, }} centeredSlides={true} slidesPerView={1} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Controller, Thumbs]} className="mySwiper2 ">
                         {
@@ -87,7 +87,7 @@ const Teastimonial = () => {
                         }
                     </Swiper>
                 </div>
-                <div className='mt-[-50px]' data-aos='fade-up'>
+                <div className='mt-[-50px]'>
                     <Swiper onSwiper={setThumbsSwiper} centeredSlides={false} loop={false} slidesPerView={1} fadeEffect={true} effect={'flip'} modules={[EffectFade, Thumbs]} autoplay={true} className="mySwiper flex justify-center items-center duration-300" >
                         {
                             TestimonialData.map((items, index) => (

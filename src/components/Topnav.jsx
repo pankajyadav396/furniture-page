@@ -20,7 +20,7 @@ const Topnav = () => {
     }
     return (
         <>
-            <nav className='max-w-[1320px] container mx-auto px-3 pt-4 z-[99]' data-aos='fade-up'>
+            <nav className='max-w-[1320px] container mx-auto px-3 pt-4 z-[999]'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center gap-2 cursor-pointer'>
                         <img src={logo} alt="logo" className='max-sm:w-[45px]' />

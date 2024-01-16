@@ -56,9 +56,9 @@ const Latestslider = () => {
 
     return (
         <>
-            <div className="pb-[138px]">
+            <div className="pb-[138px] overflow-hidden" >
                 <div className="max-w-[1340px]  px-3 mx-auto pt-[30px] ">
-                    <div className="flex flex-col text-center md:flex-row items-center justify-center 910:justify-start  gap-2" data-aos='fade-right'>
+                    <div className="flex flex-col text-center md:flex-row items-center justify-center 910:justify-start  gap-2">
                         <span className="w-[95px] h-[1px] bg-black"></span>
                         <p className="text-xl  font-ff-pop font-normal not-italic leading-normal text-[#BD7D41]">
                             Shopping Store
@@ -67,7 +67,7 @@ const Latestslider = () => {
                     <p className="910:max-w-[426px] text-center 910:text-start font-bold font-ff-pop leading-normal text-[30px] md:text-[35px] text-[#243040] not-italic md:pt-[19px] md:pb-[33px]">
                         Latest Deal
                     </p>
-                    <div data-aos='fade-up'>
+                    <div>
                         <Slider {...settings}>
                             <div>
                                 <div className="px-1 sm:px-[23px] py-[18px]  bg-[#fff] hover:shadow-[6px_13px_38px_0_rgba(0,0,0,0.12)] duration-500 mt-4 mx-1 mb-10">

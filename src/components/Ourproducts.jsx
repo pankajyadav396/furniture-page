@@ -18,17 +18,17 @@ const Ourproducts = () => {
         { img: map6, singlesofa: "Single Sofa", lorempara: "Lorem ipsum dolor", review: (<Star />), amount: "₹ 1200.00", mapbtn: (<Common2 text="ADD TO CART" />) },
     ]
     return (
-        <><div className='pt-[135px] pb-[169px] max-xl:py-[100px] max-md:py-[70px] max-sm:py-[50px]'>
+        <><div className='pt-[135px] pb-[169px] max-xl:py-[100px] max-md:py-[70px] max-sm:py-[50px] overflow-hidden'>
             <div className=' mx-auto  max-w-[1320px] px-3 '>
-                <div className='flex gap-3 items-center' data-aos='fade-right'>
+                <div className='flex gap-3 items-center'>
                     <span className="w-[95px] h-[0px] border border-black"></span>
                     <p className='text-[#BD7D41] text-lg sm:text-xl font-["poppins"] font-normal'>Shopping Store</p>
                 </div>
-                <div data-aos='fade-left' className='flex w-full flex-col gap-4 sm:flex-row  sm:justify-between items-start sm:items-center mt-4'>
+                <div  className='flex w-full flex-col gap-4 sm:flex-row  sm:justify-between items-start sm:items-center mt-4'>
                     <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-["poppins"] font-bold max-w-[436px] '>Our Products</h2>
                     <Common text="VIEW ALL PRODUCT" />
                 </div>
-                <div data-aos='fade-up' className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full lg:gap-5 xl:gap-[27px] mt-8 sm:mt-10 md:mt-16 lg:mt-[108px]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full lg:gap-5 xl:gap-[27px] mt-8 sm:mt-10 md:mt-16 lg:mt-[108px]'>
                     {products.map((items, index) => (
                         <div key={index} className='w-full bg-white duration-300 shadow-[0_0_0_0_rgba(0,0,0,0.12)] hover:shadow-[6px_13px_38px_0_rgba(0,0,0,0.12)] mb-4'>
                             <div className='sm:px-[23px] px-2 py-[18px]'>
