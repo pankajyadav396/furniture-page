@@ -20,13 +20,13 @@ const Topnav = () => {
     }
     return (
         <>
-            <nav className='max-w-[1320px] container mx-auto px-3 pt-4 z-[99]'>
+            <nav className='max-w-[1320px] container mx-auto px-3 pt-4 z-[99]' data-aos='fade-up'>
                 <div className='flex items-center justify-between'>
-                    <div className='flex items-center gap-2 cursor-pointer' data-aos='fade-right'>
+                    <div className='flex items-center gap-2 cursor-pointer'>
                         <img src={logo} alt="logo" className='max-sm:w-[45px]' />
                         <h2 className='text-white text-2xl sm:text-[33.02px] font-bold font-["Roboto"]'>FURNITURE</h2>
                     </div>
-                    <div className='flex items-center' data-aos='fade-left'>
+                    <div className='flex items-center'>
                         <ul className={`${nav ? "right-0" : "right-[-100%]"} z-40 flex items-center gap-14 mobileView duration-300`}>
                             <Link to="/" onClick={show} className={`${location.pathname === "/" && "after:duration-500 after:w-full after:absolute relative after:left-0 after:right-0 after:bottom-0  after:h-[2px] after:rounded-full after:bg-[#BD7D41] "} text-lg font-normal text-white  font-["Roboto"]  relative py-1.5 `}>HOME</Link>
                             <Link to="/About" onClick={show} className={`${location.pathname === "/About" && "after:duration-500 after:w-full after:absolute relative after:left-0 after:right-0 after:bottom-0  after:h-[2px] after:rounded-full after:bg-[#BD7D41]"} text-lg font-normal text-white font-["Roboto"] text-nowrap relative py-1.5 `}>ABOUT US</Link>
