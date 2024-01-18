@@ -18,7 +18,7 @@ const Sofaset = () => {
               </div>
               <div className='lg:w-7/12  relative z-[1] px-3 mt-8 lg:mt-0'>
                 <img src={Sofaimg} alt="sofaimg" className='lg:w-full max-lg:max-w-[500px] w-full' />
-                <div className="w-[741px] h-[270px] max-sm:h-[180px] max-sm:bottom-[-40px] bg-slate-800 lg:right-[-43%] right-[-80%] bottom-[-65px] absolute z-[-1]" />
+                <div className="xl:w-[7141px] w-[741px] h-[270px] max-sm:h-[180px] max-sm:bottom-[-40px] bg-slate-800 xl:right-[-878%] lg:right-[-50%] right-[-80%] bottom-[-65px] absolute z-[-1]" />
               </div>
             </div>
           </div >

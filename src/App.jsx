@@ -30,7 +30,7 @@ function App() {
     setTimeout(() => {
       setloader(false);
       document.body.classList.remove("overflow-hidden")
-    }, 2500);
+    },2500);
   }, []);
   return (
     <>
@@ -39,11 +39,11 @@ function App() {
           <Herosec />
           <Backtotop />
           <Routes>
-            <Route path="/" element={<Homepage />}></Route>
-            <Route path="/About" element={<About />}></Route>
-            <Route path="/Shop" element={<Shop />}></Route>
-            <Route path="/Contact" element={<Contact />}></Route>
-            <Route path="/Cart" element={<Cart />}></Route>
+            <Route path="/" element={<Homepage />}/>
+            <Route path="/About" element={<About />}/>
+            <Route path="/Shop" element={<Shop />}/>
+            <Route path="/Contact" element={<Contact />}/>
+            <Route path="/Cart" element={<Cart />}/>
           </Routes>
           <Footer />
         </div>)}

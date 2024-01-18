@@ -26,3 +26,13 @@ export const Arrow_2 = () => {
         </svg>
     )
 }
+
+export const Pause = () => {
+    return (
+        <span className="w-6 h-6 sm:w-10 sm:h-10 md:w-[45px] md:h-[45px] bg-[#BD7D41] rounded-full flex items-center justify-center">
+            <svg className="ml-[3px] sm:ml-[6px] w-2 sm:w-4 " height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 9.5L0.249999 18.5933L0.25 0.406733L16 9.5Z" fill="white" />
+            </svg>
+        </span>
+    )
+}

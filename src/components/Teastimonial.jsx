@@ -4,13 +4,13 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/thumbs';
 import { Controller, EffectFade, Thumbs } from 'swiper/modules';
-import image1 from '../assets/images/tmonial-img1.png'
-import image2 from '../assets/images/tmonial-img2.png'
-import image3 from '../assets/images/tmonial-img3.png'
-import image4 from '../assets/images/tmonial-img4.png'
-import image5 from '../assets/images/tmonial-img5.png'
-import image6 from '../assets/images/tmonial-img6.png'
-import image7 from '../assets/images/tmonial-img7.png'
+import image1 from '../assets/images/webp/tmonial-img1.webp'
+import image2 from '../assets/images/webp/tmonial-img2.webp'
+import image3 from '../assets/images/webp/tmonial-img3.webp'
+import image4 from '../assets/images/webp/tmonial-img4.webp'
+import image5 from '../assets/images/webp/tmonial-img5.webp'
+import image6 from '../assets/images/webp/tmonial-img6.webp'
+import image7 from '../assets/images/webp/tmonial-img7.webp'
 const Teastimonial = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const TestimonialData = [
@@ -73,8 +73,8 @@ const Teastimonial = () => {
         <div className='mx-auto px-3 max-w-[1320px] md:pt-[60px] pt-40px overflow-hidden'>
             <div className='flex items-center gap-3'>
                 <span className='w-[95px] h-[1px] border-black bg-black'></span>
-                <p className='text-[#BD7D41] text-lg sm:text-xl font-Poppins font-normal headingLine'>Customer Says</p></div>
-            <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-Poppins font-bold max-w-[436px] mt-5 leading-normal'>Testimonial</h2>
+                <p className='text-[#BD7D41] text-lg sm:text-xl font-["poppins"] font-normal headingLine'>Customer Says</p></div>
+            <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-["poppins"] font-bold max-w-[436px] mt-5 leading-normal'>Testimonial</h2>
             <div className='mt-[51px] mb-12 sm:mb-16 md:mb-20 lg:mb-[109px]'>
                 <div>
                     <Swiper loop={true} spaceBetween={55} breakpoints={{ 450: { slidesPerView: 3, }, 700: { slidesPerView: 5, }, 1024: { slidesPerView: 7, }, }} centeredSlides={true} slidesPerView={1} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Controller, Thumbs]} className="mySwiper2 ">
@@ -92,9 +92,9 @@ const Teastimonial = () => {
                         {
                             TestimonialData.map((items, index) => (
                                 <SwiperSlide key={index}>
-                                    <h2 className='text-black text-lg font-Poppins font-semibold pt-2 leading-normal text-center'>{items.name}</h2>
-                                    <p className='text-[#4D4D4D] text-xs font-Poppins pt-1 font-light leading-normal text-center'>{items.Profession}</p>
-                                    <p className='text-black font-Poppins font-light leading-normal text-sm mt-3 max-w-[350px] mx-auto text-center'>{items.bio}</p>
+                                    <h2 className='text-black text-lg font-["poppins"] font-semibold pt-2 leading-normal text-center'>{items.name}</h2>
+                                    <p className='text-[#4D4D4D] text-xs font-["poppins"] pt-1 font-light leading-normal text-center'>{items.Profession}</p>
+                                    <p className='text-black font-["poppins"] font-light leading-normal text-sm mt-3 max-w-[350px] mx-auto text-center'>{items.bio}</p>
                                 </SwiperSlide>
                             ))
                         }
@@ -105,4 +105,4 @@ const Teastimonial = () => {
     )
 }
 
-export default Teastimonial
+export default Teastimonial;
