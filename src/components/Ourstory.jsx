@@ -2,9 +2,9 @@ import sofa from '../assets/images/webp/explorevideoimg.webp'
 import Common from "./Common";
 import { Pause } from './Svg'
 
-const Ourstory = ({ ease }) => {
+const Ourstory = () => {
     return (
-        <div className='overflow-hidden pt-20 sm:pt-[134px] pb-5 sm:pb-16 md:pb-20 lg:pb-[113px]'>
+        <div className='overflow-hidden pt-20 sm:pt-[134px] pb-12 sm:pb-200 md:pb-[160px] lg:pb-[266px]'>
             <div className='container max-w-[1320px] mx-auto px-3'>
                 <div className='grid grid-cols-1 md:grid-cols-2 w-full items-center lg:items-start'>
                     <div className='relative flex justify-center md:justify-start'>

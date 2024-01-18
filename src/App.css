@@ -55,6 +55,32 @@ label {
     animation: backtop 5s linear infinite;
 }
 
+.slider-first .slick-list {
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
+}
+
+.slider-first .slick-list::after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 4000px;
+    height: 100%;
+    right: 101%;
+    z-index: 0;
+    background-color: #F7F7F8;
+}
+
+.slider-first .slick-track {
+    display: flex !important;
+}
+
+.webkitst:hover {
+    -webkit-text-stroke: 0.7px #fff;
+}
+
 @keyframes backtop {
     0% {
         box-shadow: none;
