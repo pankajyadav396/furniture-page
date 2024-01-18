@@ -30,7 +30,7 @@ function App() {
     setTimeout(() => {
       setloader(false);
       document.body.classList.remove("overflow-hidden")
-    },2500);
+    },3000);
   }, []);
   return (
     <>

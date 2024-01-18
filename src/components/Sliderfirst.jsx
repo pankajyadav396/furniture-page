@@ -135,8 +135,6 @@ const Sliderfirst = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    autoPlay: true,
-                    autoPlaySpeed: 1000,
                 }
             },
         ]
