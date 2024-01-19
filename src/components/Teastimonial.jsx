@@ -11,6 +11,7 @@ import image4 from '../assets/images/webp/tmonial-img4.webp'
 import image5 from '../assets/images/webp/tmonial-img5.webp'
 import image6 from '../assets/images/webp/tmonial-img6.webp'
 import image7 from '../assets/images/webp/tmonial-img7.webp'
+
 const Teastimonial = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const TestimonialData = [
@@ -88,7 +89,7 @@ const Teastimonial = () => {
                     </Swiper>
                 </div>
                 <div className='mt-[-50px]'>
-                    <Swiper onSwiper={setThumbsSwiper} centeredSlides={false} loop={false} slidesPerView={1} fadeEffect={true} effect={'flip'} modules={[EffectFade, Thumbs]} autoplay={true} className="mySwiper flex justify-center items-center duration-300" >
+                    <Swiper onSwiper={setThumbsSwiper}    centeredSlides={false} loop={false} slidesPerView={1} fadeEffect={true} effect={'flip'} modules={[EffectFade, Thumbs]} autoplay={true} className="mySwiper flex justify-center items-center duration-300" >
                         {
                             TestimonialData.map((items, index) => (
                                 <SwiperSlide key={index}>

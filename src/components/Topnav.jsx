@@ -4,7 +4,6 @@ import SearchIcon from '../assets/images/svg/search.svg'
 import CartIcon from '../assets/images/svg/cart.svg'
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-useLocation
 
 const Topnav = () => {
     const location = useLocation();
@@ -17,6 +16,10 @@ const Topnav = () => {
         else {
             document.body.classList.remove("max-lg:overflow-hidden")
         }
+    };
+    const [isSearchOpen, setIsSearchOpen] = useState(false)
+    const SearchOpen = () => {
+        setIsSearchOpen(!isSearchOpen);
     }
     return (
         <>
@@ -39,8 +42,16 @@ const Topnav = () => {
                             </li>
                         </ul>
 
-                        <ul className='flex items-center gap-7 pl-10 max-sm:hidden'>
-                            <li><a href="#"><img src={SearchIcon} alt="search-icon" /></a></li>
+                        <ul className='flex items-center gap-2 pl-10 max-sm:hidden'>
+                            <li className='flex gap-4 items-center'>
+                                <span onClick={SearchOpen}>
+                                    {isSearchOpen ? (<div className=" relative cursor-pointer group mb-1 ">
+                                        <span className="flex bg-white  group-hover:bg-[#BD7D41]  absolute -left-3 duration-500 top-0 rotate-45 h-[2px] w-5"></span>
+                                        <span className="flex bg-white group-hover:bg-[#BD7D41] absolute -left-3 duration-500 -rotate-45 h-[2px] w-5 mb-1"></span>
+                                    </div>) : (<img src={SearchIcon} alt="seacfsgfve"/> )}
+                                </span> 
+                                <input type='text' placeholder='Search.....'  className={`transition-all  ease-in duration-300 rounded max-sm:hidden ${isSearchOpen ? "w-[120px]" : "w-[0]"}`} />
+                            </li>
                             <li><a href="#"><img src={CartIcon} alt="cart-icon" /></a></li>
                         </ul>
 

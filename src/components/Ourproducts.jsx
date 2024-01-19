@@ -4,9 +4,9 @@ import map3 from '../assets/images/webp/sofa_3.webp'
 import map4 from '../assets/images/webp/sofa_4.webp'
 import map5 from '../assets/images/webp/sofa_5.webp'
 import map6 from '../assets/images/webp/sofa_6.webp'
-import Common from "./Common";
-import Common2 from "./Common2";
-import { Star } from "./Svg";
+import Common from "./Common"
+import Common2 from "./Common2"
+import { Star } from "./Svg"
 
 const Ourproducts = () => {
     const products = [
@@ -24,7 +24,7 @@ const Ourproducts = () => {
                     <span className="w-[95px] h-[0px] border border-black"></span>
                     <p className='text-[#BD7D41] text-lg sm:text-xl font-["poppins"] font-normal'>Shopping Store</p>
                 </div>
-                <div  className='flex w-full flex-col gap-4 sm:flex-row  sm:justify-between items-start sm:items-center mt-4'>
+                <div className='flex w-full flex-col gap-4 sm:flex-row  sm:justify-between items-start sm:items-center mt-4'>
                     <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-["poppins"] font-bold max-w-[436px] '>Our Products</h2>
                     <Common text="VIEW ALL PRODUCT" />
                 </div>
@@ -51,5 +51,5 @@ const Ourproducts = () => {
         </>
     )
 }
-
+  
 export default Ourproducts

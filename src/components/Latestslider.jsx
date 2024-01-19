@@ -62,13 +62,13 @@ const Latestslider = () => {
         <>
             <div className="pb-[138px] " >
                 <div className="max-w-[1340px]  px-3 mx-auto pt-[30px] ">
-                    <div className="flex flex-col text-center md:flex-row items-center justify-center 910:justify-start  gap-2">
+                    <div className="flex flex-col md:flex-row items-center 910:justify-start  gap-2">
                         <span className="w-[95px] h-[1px] bg-black"></span>
                         <p className="text-xl  font-['poppins'] font-normal not-italic leading-normal text-[#BD7D41]">
                             Shopping Store
                         </p>
                     </div>
-                    <p className="910:max-w-[426px] text-center 910:text-start font-bold font-['poppins'] leading-normal text-[30px] md:text-[35px] text-[#243040] not-italic md:pt-[19px] md:pb-[33px]">
+                    <p className="910:max-w-[426px] 910:text-start font-bold font-['poppins'] leading-normal text-[30px] md:text-[35px] text-[#243040] not-italic md:pt-[19px] md:pb-[33px]">
                         Latest Deal
                     </p>
                     <div>
